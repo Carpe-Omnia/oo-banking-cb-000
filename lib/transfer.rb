@@ -22,7 +22,7 @@ class Transfer
     end
   end
   def reverse_transfer
-    if @status != "completed"
+    if @status != "complete"
       return "Transfer hasn't been completed."
     else
       @status = "reversed"
