@@ -19,3 +19,5 @@ class BankAccount
     @status = "closed"
   end
 end
+Tom = BankAccount.new("Tom")
+puts Tom.valid?
