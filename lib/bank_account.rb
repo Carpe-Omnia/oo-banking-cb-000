@@ -21,3 +21,5 @@ class BankAccount
 end
 Tom = BankAccount.new("Tom")
 puts Tom.valid?
+Tom.balance = 0
+pits Tom.valid? 
