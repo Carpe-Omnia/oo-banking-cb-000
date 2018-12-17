@@ -21,4 +21,13 @@ class Transfer
       @status = "complete"
     end
   end
+  def reverse_transfer
+    if @status != "completed"
+      return "Transfer hasn't been completed."
+    else
+      @status = "reversed"
+      @receiver.balance -= @amount
+      @sender.balance += @amount
+    end
+  end
 end
